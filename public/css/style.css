@@ -29,8 +29,7 @@ body {
     width: 100vw;
     height: 100vh;
     background: var(--background);
-    user-select: none;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 a {
     color: var(--text);
@@ -69,20 +68,6 @@ header{
     left: 0;
     right: 0;
     z-index: 2000;
-}
-
-header #toggler {
-    display: none;
-}
-
-header .fa-bars {
-    font-size: 3rem;
-    color: #333;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1.5rem;
-    cursor: pointer;
-    border: 0.1rem solid rgba(0, 0, 0, 0.3);
-    display: none;
 }
 
 .desktop_header {
@@ -132,12 +117,14 @@ header .fa-bars {
     gap: 12px;
     height: 80px;
     padding: 0 5%;
+    margin-bottom: 15px;
 }
 .band {
     display: flex;
     justify-content: center;
     width: 20%;
     height: 100%;
+    cursor: pointer;
 }
 .band img{
     max-width: 200px;
@@ -162,11 +149,16 @@ header .fa-bars {
     padding: 0 100px 0 20px;
 }
 .search_btn {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    max-width: 40px;
     position: absolute;
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.8rem;
+    cursor: pointer;
 }
 
 .search_box-recommen {
@@ -182,7 +174,15 @@ header .fa-bars {
     opacity: 1;
     animation: top 2s;
 }
-
+.search_box-recommen::-webkit-scrollbar {
+    width: 7px;
+    background-color: rgb(184, 184, 184, .3);
+    border-radius: var(--border-radius-1);
+}
+.search_box-recommen::-webkit-scrollbar-thumb {
+    background-color: rgb(184, 184, 184, .7);
+    border-radius: var(--border-radius-1);
+}
 .search_box-recommen .hidd{
     top: 70px;
     opacity: 0;
@@ -262,7 +262,7 @@ header .fa-bars {
     cursor: pointer;
 }
 .shopping_bag > i{
-    padding:5px 5px 0px;
+    padding:5px 5px 0;
     font-size: 3rem;
 }
 
@@ -272,21 +272,24 @@ header .fa-bars {
     align-items: center;
     height: 56px;
     border-bottom: 1px solid var(--accent);
-    margin-top:15px ;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .desktop_nav{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
-    margin: 10px 5% 15px;
+    max-width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .desktop_nav ul{
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     height: 100%;
     width: 100%;
 }
@@ -296,6 +299,7 @@ header .fa-bars {
     align-items: center;
     height: 100%;
     padding: 8px 12px;
+    cursor: pointer;
 }
 
 .desktop_nav ul li:hover {
@@ -315,11 +319,13 @@ header .fa-bars {
 
 .desktop_nav-menu{
     display: none;
+    position: fixed;
     flex-direction: row;
     gap: 80px;
     padding: 20px 5% 10px;
     border-bottom: 1px solid var(--accent);
     border-radius:0 0 10px 10px;
+    z-index: 3000;
 }
 
 .desktop_nav-menu.active{
@@ -430,8 +436,100 @@ header .fa-bars {
     display: none;
 }
 
+/* Moblie Header */
+.mobile_header{
+    display: none;
+    background-color: #F7F7F7;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+    z-index: 1000;
+    position: fixed;
+    padding: 0 15px;
+}
+
+.search_box-container {
+    padding: 0 14px;
+    width: 100%;
+}
+
+.mobile_header #toggler{
+    display: none;
+}
+
+.mobile_header i{
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Navbar */
+.mobile_navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 400px;
+    background-color: var(--background);
+    transform: translateX(-400px);
+    max-width: 100%;
+    z-index: 2000;
+    transition: 0.5s;
+}
+
+.mobile_navbar-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: #F7F7F7;
+    font-size: 1.8rem;
+    border-bottom: 1px solid var(--accent);
+}
+
+.mobile_navbar-top > label{
+    font-size: 2.2rem;
+}
+
+.mobile_navbar-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.mobile_navbar-list ul {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--accent);
+    width: 100%;
+    height: 100%;
+}
+
+.mobile_navbar-list ul li {
+    margin-bottom: 16px;
+    padding-left: 2rem;
+}
+
+.mobile_navbar-list ul li > a{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile_navbar-list ul li:hover{
+    cursor: pointer;
+    border: 1px solid var(--accent);
+    border-radius: var(--border-radius-1);
+    background-color: #F7EE23;
+}
 /* Model OVERLAY */
 .over_lay {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -449,3 +547,69 @@ header .fa-bars {
         top: 50%;
     }
 }
+
+
+/* Media Query */
+@media only screen and (max-width: 1023px){
+    html {
+        font-size: 60%;
+    }
+    .desktop_header {
+        display: none;
+    }
+    .mobile_header {
+        display: flex;
+    }
+    .mobile_header i {
+        display: block;
+    }
+    .search_box {
+        height: 40px;
+        max-width: 33rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    .search_box > input {
+        font-size: 1.3rem;
+    }
+    .search_box i{
+        font-size: 2rem;
+    }
+    .shopping_bag {
+        margin-left: auto;
+    }
+    .shopping_bag > i{
+        padding: 5px;
+    }
+    .mobile_header #toggler:checked ~ .mobile_navbar {
+        transform: translateX(0);
+        transition: 0.5s;
+    }
+    .mobile_header #toggler:checked ~ .over_lay{
+        display: block;
+    }
+    .settings {
+        width: 100%;
+        max-width: 17rem;
+    }
+    .settings > a {
+        display: flex;
+        align-items: center;
+        padding: 6px 8px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .settings a > i {
+        font-size: 2.5rem;
+    }
+    .settings > a:hover {
+        border: 1px solid var(--accent);
+        background-color: #F7EE23;
+        border-radius: var(--border-radius-1);
+    }
+
+    .settings span {
+        font-size: 1.3rem;
+    }
+}
+

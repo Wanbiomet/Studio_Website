@@ -1,7 +1,5 @@
 <header>
     <div class="desktop_header">
-        <input type="checkbox" name="" id="toggler">
-{{--        <label for="toggler" class="fas fa-bars"></label>--}}
         <div class="header_top-container">
             <div class="header_top">
                 <ul class="header_top-list">
@@ -24,69 +22,69 @@
                     </div>
                 </button>
                 <div class="search_box-recommen hidd">
-                    <ul class="recommen_list">
-                        <li class="recommen_item"><a>Bao lô - túi xách</a>
-                            <ul class="product_smallbox-list">
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="recommen_item"><a>Phụ kiện</a>
-                            <ul class="product_smallbox-list" >
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="recommen_item"><a>Trang sức</a>
-                            <ul class="product_smallbox-list" >
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product_smallbox">
-                                        <img src="./images/baolo-1.jpg">
-                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>
-                                        <span>99.99$</span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
+{{--                    <ul class="recommen_list">--}}
+{{--                        <li class="recommen_item"><a>tên danh mục</a>--}}
+{{--                            <ul class="product_smallbox-list">--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="hình ảnh sản phẩm">--}}
+{{--                                        <span>Tên sản phẩm</span>--}}
+{{--                                        <span>giá sản phẩm</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="./images/baolo-1.jpg">--}}
+{{--                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>--}}
+{{--                                        <span>99.99$</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="./images/baolo-1.jpg">--}}
+{{--                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>--}}
+{{--                                        <span>99.99$</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li class="recommen_item"><a>Phụ kiện</a>--}}
+{{--                            <ul class="product_smallbox-list" >--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="./images/baolo-1.jpg">--}}
+{{--                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>--}}
+{{--                                        <span>99.99$</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                        <li class="recommen_item"><a>Trang sức</a>--}}
+{{--                            <ul class="product_smallbox-list" >--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="./images/baolo-1.jpg">--}}
+{{--                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>--}}
+{{--                                        <span>99.99$</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="./images/baolo-1.jpg">--}}
+{{--                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>--}}
+{{--                                        <span>99.99$</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                                <li>--}}
+{{--                                    <div class="product_smallbox">--}}
+{{--                                        <img src="./images/baolo-1.jpg">--}}
+{{--                                        <span>Balo du lịch (Dry bag), vải dù thẳng thớm</span>--}}
+{{--                                        <span>99.99$</span>--}}
+{{--                                    </div>--}}
+{{--                                </li>--}}
+{{--                            </ul>--}}
+{{--                        </li>--}}
+{{--                    </ul>--}}
                 </div>
             </div>
             <div class="settings">
@@ -97,7 +95,6 @@
                 <div class="shopping_bag">
                     <i class='bx bx-shopping-bag'></i>
                 </div>
-
             </div>
         </div>
         <div class="header_nav-container">
@@ -225,4 +222,53 @@
             </div>
         </section>
     </div>
+    <div class="mobile_header">
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler"><i class='bx bx-menu'></i></label>
+        <label for="toggler" class="over_lay"></label>
+        <div class="search_box-container">
+            <div class="search_box">
+                <input type="text" name="search" placeholder="Nhập để tìm kiếm...">
+                <button type="submit">
+                    <div class="search_btn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="settings">
+            <a href="#">
+                <i class='bx bx-user'></i>
+                <span id="open_formAuth">Đăng nhập</span>
+            </a>
+            <div class="shopping_bag">
+                <i class='bx bx-shopping-bag'></i>
+            </div>
+        </div>
+        <div class="mobile_navbar">
+            <div class="mobile_navbar-top">
+                <span>MENU</span>
+                <label for="toggler"><i  class="bx bx-x"></i></label>
+            </div>
+            <div class="mobile_navbar-list">
+                <ul>
+                   <li>
+                       <a href="#">
+                           <span id="open_formAuth">Đăng nhập / Đăng ký</span>
+                           <i class='bx bx-log-in' ></i>
+                       </a>
+                   </li>
+                </ul>
+                <ul>
+                    <li><a>Chụp Ảnh Nền Trắng</a></li>
+                    <li><a>Chụp Ảnh Concept</a></li>
+                    <li><a>Chụp Ảnh 3D</a></li>
+                    <li><a>Quay Video Sản Phẩm</a></li>
+                    <li><a>Xử Lý Hậu Kì</a></li>
+                    <li><a>Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </header>
